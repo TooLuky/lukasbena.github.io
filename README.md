@@ -13,7 +13,7 @@ School projects are listed in the `schoolProjects` array. Add an image URL to `i
 
 Each project can have a short `summary` for its homepage card and a longer `description` for its detail page. Project detail links use the project's unique `id`; keep IDs unique within each project list.
 
-The About page is in `about.html`. A Fitness & Travel draft is kept in `fitness-travel.html` but is not linked from the portfolio; add navigation links back when you're ready to use it.
+The About page is in `about.html` and includes a portrait placeholder you can replace with a photo when you're ready. A Fitness & Travel draft is kept in `fitness-travel.html` but is not linked from the portfolio; add navigation links back when you're ready to use it.
 
 ## Publish with GitHub Pages
 

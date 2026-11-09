@@ -1,7 +1,7 @@
 {
   "name": "Lukas Bena",
   "kicker": "CARS · CURIOSITY · NATURE",
-  "intro": "I enjoy working on projects, whether that means working with my hands or with my brain. This is a place to keep what I’ve worked on, learned, and want to explore next.",
+  "intro": "I like to stay busy, whether that means working on cars, solving a tricky problem, or getting outside. This is a place to share what I’ve made and what I’m learning.",
   "email": "lukas.bena4@gmail.com",
   "socials": [
     { "label": "GitHub", "url": "https://github.com/" },
@@ -15,34 +15,32 @@
       "summary": "A 1980 Honda Z50 restoration, bringing a classic motorcycle back to life.",
       "category": "GARAGE PROJECT",
       "year": "2020",
-      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85",
-      "imageAlt": "A 1980 Honda Z50 motorcycle",
-      "url": "",
-      "example": true
+      "image": "",
+      "imageAlt": "",
+      "url": ""
     },
     {
       "id": "flashfood-heat-map",
       "title": "Flashfood Heat map",
       "description": "I built this application to learn new skills and create something useful. It tracks selected Flashfood stores, including when and how often they upload listings, so I can identify the best times to check the app. It only uses publicly available information and cannot purchase anything, in keeping with Flashfood's terms of service. I'm a real deal hunter! \n To perform this task I used mitmproxy to gather the information from my phone as Flashood's is a mobile app. I then used google sheets to create myself a database and google scripts to process the data and create a heat map of the listing activity. Finally, I built a web application using google script apps to display the heat map and allow users to select different stores to track. This might be a silly way to have the information kept but for me it works and helps a lot especially when I don't want to be on my phone too much. But I definitely learned a lot about API keys and how they are decoded which was a fun thing to learn about.",
       "summary": "A heat map that tracks Flashfood listing activity to help find the best times to check the app.",
-      "category": "OUTDOORS",
+      "category": "DATA PROJECT",
       "year": "2025",
-      "image": "images/flashfood%20tracker%20heatmap%20image.jpg",
+      "image": "images/flashfoodheatmappreview.png",
       "imageAlt": "A screenshot of the Flashfood Heat map application interface showing store tracking data",
       "url": "",
-      "example": true
+      "example": false
     },
     {
       "id": "1969 Firebird 350 Project ",
-      "title": "1969 Firbird 350 Project",
+      "title": "1969 Firebird 350 Restoration",
       "description": "This is a project that I've been working on for as long as I can remember. My father had this barn find when I was born and said if I want it, I need to fix it. So through the years whenever I have an opprotunity to work on this, I try to get something done. So far I stripped the whole car and put all the components into labelled boxes. From here I put the car on a rotisserie and started to sandblast the body and frame. After that I had to do some welding to fix some rusted areas and then currently on this portion. \n \n Next steps are to get the body completed and painted, then put the transmission and engine back in, finally the fun part of installing the interior and exterior components. With a project let this the most difficult part is to find time to work on it.",
       "summary": "I've been working on restoring a 1969 Firebird 350.",
       "category": "IN PROGRESS",
       "year": "2020",
-      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
-      "imageAlt": "Sunlight coming through a green forest",
-      "url": "",
-      "example": true
+      "image": "",
+      "imageAlt": "",
+      "url": ""
     },
     {
       "id": "Dividends Calculator",
@@ -51,10 +49,9 @@
       "summary": "This is a dividends calculator to track dividend income and when they are paid.",
       "category": "IN PROGRESS",
       "year": "2020",
-      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
-      "imageAlt": "Sunlight coming through a green forest",
-      "url": "",
-      "example": true
+      "image": "",
+      "imageAlt": "",
+      "url": ""
     }
   ],
   "schoolProjects": [

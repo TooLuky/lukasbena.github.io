@@ -47,7 +47,7 @@ fetch("content.json")
     const media = videoURL
       ? `<video src="${escapeHTML(videoURL)}" controls preload="metadata" aria-label="${escapeHTML(project.title)} video"></video>`
       : imageURL
-        ? `<img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" />`
+        ? `<a class="project-detail-image-link" href="${escapeHTML(imageURL)}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image for ${escapeHTML(project.title)}"><img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" /></a>`
         : "";
     const meta = [project.category, project.year].filter(Boolean);
     const externalURL = safeURL(project.url);

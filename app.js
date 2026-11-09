@@ -27,7 +27,7 @@ const renderProject = (project, index, collection) => {
     ? `<video src="${escapeHTML(videoURL)}" controls preload="metadata" aria-label="${escapeHTML(project.title)} video"></video>`
     : imageURL
       ? `<img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" loading="lazy" />`
-      : `<div class="project-image-empty" aria-hidden="true"><span>VIEW PROJECT<br />DETAILS</span></div>`;
+      : `<div class="project-image-empty" aria-hidden="true"><span>PHOTO<br />COMING SOON</span></div>`;
   const meta = [project.category, project.year].filter(Boolean);
 
   return `
@@ -60,7 +60,7 @@ fetch("content.json")
     return response.json();
   })
   .then((content) => {
-    document.title = `Portfolio | ${content.name}`;
+    document.title = `${content.name} | Projects & ideas`;
     document.querySelector("#header-name").textContent = content.name;
     document.querySelector("#footer-name").textContent = content.name;
     document.querySelector("#intro-kicker").textContent = content.kicker;
