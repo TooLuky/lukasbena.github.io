@@ -1,6 +1,6 @@
 # Portfolio site
 
-A small, framework-free portfolio for GitHub Pages. The page reads its content from `content.json`, so projects, milestones, links, and updates can be changed without editing the layout.
+A small, framework-free portfolio for GitHub Pages. The page reads its content from `content.json`, so your introduction, projects, school projects, and links can be changed without editing the layout.
 
 ## Update your content
 
@@ -8,6 +8,12 @@ A small, framework-free portfolio for GitHub Pages. The page reads its content f
 2. To add an entry, copy an existing object in the matching list and edit its fields. Set `example` to `false` or remove it to hide the example label.
 3. Project images can be hosted anywhere publicly and added as the project's `image` URL. Use an empty string if you do not want an image.
 4. Commit and push your changes to `main`. GitHub Actions will publish the site to <https://tooluky.github.io/lukasbena.github.io/>.
+
+School projects are listed in the `schoolProjects` array. Add an image URL to `image` or a video URL to `video` when you're ready to add media.
+
+Each project can have a short `summary` for its homepage card and a longer `description` for its detail page. Project detail links use the project's unique `id`; keep IDs unique within each project list.
+
+The About page is in `about.html`. A Fitness & Travel draft is kept in `fitness-travel.html` but is not linked from the portfolio; add navigation links back when you're ready to use it.
 
 ## Publish with GitHub Pages
 

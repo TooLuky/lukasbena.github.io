@@ -1,6 +1,6 @@
 {
   "name": "Lukas Bena",
-  "kicker": "CARS · CURIOSITY · THE OUTDOORS",
+  "kicker": "CARS · CURIOSITY · NATURE",
   "intro": "I enjoy working on projects, whether that means working with my hands or with my brain. This is a place to keep what I’ve worked on, learned, and want to explore next.",
   "email": "lukas.bena4@gmail.com",
   "socials": [
@@ -9,8 +9,10 @@
   ],
   "projects": [
     {
+      "id": "honda-z50",
       "title": "Honda Z50",
-      "description": "This project goes over me restorating a 1980 Honda Z50 motorcycle and bringing it back to life",
+      "description": "This 1980 Honda Z50 was a barn find, I knew that I was going to be able to fix it up. PLus I wanted something to work on during COVID as I have a hard time just sitting around so this was a great excuse to get some work in. Firstly I completely disassembled the bike, organized the parts, cleaned and labelled them, took a photo. The I proceeded painting the body a cherry red which was a nice touch as that's a similar colour to one of the FireBird's. After paint and cleaning all the parts on the body, I sanded the rims as they were in rough shape but nothing a little elbow grease couldn't fix, then I polished them up and put the bike back together. I also replaced the tires, chain, and spark plug and a few more accessory parts that were in rough shape. Now the bike is now running great and looks amazing! I learned a lot about working on motorcycles, I learned the importance of keeping this organization, keeping calm because issues will always come up as well as willing to ask for help. This was a great experience.",
+      "summary": "A 1980 Honda Z50 restoration, bringing a classic motorcycle back to life.",
       "category": "GARAGE PROJECT",
       "year": "2020",
       "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85",
@@ -19,68 +21,134 @@
       "example": true
     },
     {
+      "id": "flashfood-heat-map",
       "title": "Flashfood Heat map",
-      "description": "A visualization of popular times at Flashfood locations, helping users plan their visits efficiently.",
+      "description": "I built this application to learn new skills and create something useful. It tracks selected Flashfood stores, including when and how often they upload listings, so I can identify the best times to check the app. It only uses publicly available information and cannot purchase anything, in keeping with Flashfood's terms of service. I'm a real deal hunter! \n To perform this task I used mitmproxy to gather the information from my phone as Flashood's is a mobile app. I then used google sheets to create myself a database and google scripts to process the data and create a heat map of the listing activity. Finally, I built a web application using google script apps to display the heat map and allow users to select different stores to track. This might be a silly way to have the information kept but for me it works and helps a lot especially when I don't want to be on my phone too much. But I definitely learned a lot about API keys and how they are decoded which was a fun thing to learn about.",
+      "summary": "A heat map that tracks Flashfood listing activity to help find the best times to check the app.",
       "category": "OUTDOORS",
       "year": "2025",
-      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85",
-      "imageAlt": "A quiet mountain lake at sunrise",
+      "image": "images/flashfood%20tracker%20heatmap%20image.jpg",
+      "imageAlt": "A screenshot of the Flashfood Heat map application interface showing store tracking data",
       "url": "",
       "example": true
     },
     {
-      "title": "Learning by doing",
-      "description": "Keep track of skills, experiments, and ideas you’re still working through.",
+      "id": "1969 Firebird 350 Project ",
+      "title": "1969 Firbird 350 Project",
+      "description": "This is a project that I've been working on for as long as I can remember. My father had this barn find when I was born and said if I want it, I need to fix it. So through the years whenever I have an opprotunity to work on this, I try to get something done. So far I stripped the whole car and put all the components into labelled boxes. From here I put the car on a rotisserie and started to sandblast the body and frame. After that I had to do some welding to fix some rusted areas and then currently on this portion. \n \n Next steps are to get the body completed and painted, then put the transmission and engine back in, finally the fun part of installing the interior and exterior components. With a project let this the most difficult part is to find time to work on it.",
+      "summary": "I've been working on restoring a 1969 Firebird 350.",
       "category": "IN PROGRESS",
-      "year": "2024",
+      "year": "2020",
       "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
       "imageAlt": "Sunlight coming through a green forest",
       "url": "",
       "example": true
     },
     {
-      "title": "Learning by doing",
-      "description": "Keep track of skills, experiments, and ideas you’re still working through.",
+      "id": "Dividends Calculator",
+      "title": "Finances",
+      "description": "I built this dividend calculator because I tend to have a knack for numbers and I enjoy being in the know. I built this right when I turned 18 and been improving upon it ever since. I think it's great to stay in touch with your finances.",
+      "summary": "This is a dividends calculator to track dividend income and when they are paid.",
       "category": "IN PROGRESS",
-      "year": "2024",
+      "year": "2020",
       "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
       "imageAlt": "Sunlight coming through a green forest",
       "url": "",
       "example": true
     }
   ],
-  "journey": [
+  "schoolProjects": [
     {
-      "date": "2026",
-      "title": "Making room for what’s next",
-      "description": "Collecting the work in one place and making a little more space for the next idea.",
-      "example": true
+      "id": "cad-solar-panel-design",
+      "title": "CAD Solar Panel Design",
+      "description": "During this project we had pick a home, re model it in SOLIDWORKS then using google maps and other softwares we were able to figure out the best places to locate the solar panels for the most efficiency. Then once we figure out where to roughly locate the solar panels we modelled a wide variety of differet panels tested them on the CAD house model and made the decision on where to mount and wire them. This was a fun project as we got to really get into the details of how solar panels are installed and how they work. We later did the calculations of how long it would take to get the return on investment as well as more indepth energy calculations.",
+      "summary": "Design, calculate, plan and execute solar panels for a home",
+      "category": "CAD DESIGN",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
     },
     {
-      "date": "2023",
-      "title": "A new chapter begins",
-      "description": "A shift in direction, a fresh set of questions, and plenty to learn along the way.",
-      "example": true
+      "id": "bachelors-capstone",
+      "title": "Bachelor's Capstone",
+      "description": "Our capstone project looked into problem of house fires especially ones caused by the elder or one's with memory impairments. Our group decided to create a retrofit stove knob for gas stoves that automatically turns off after a set time (user set). This means one's that still want to be independent and still cook for themselves. This allows for a more safe approach to the cooking scene. \n \n As a group we learned a lot when it comes to manufactuering as well as testing prototypes we went through many iterations, and hiccups. We created a proof of concept prototype for our demonstration day with a makeshift stove we also created a digital app where the user can turn off the stove whenever they want to as long as they have an internet connection. This is a great feature for one's that are scared if they left their stove on, providing peace at mind. Our physical knob was 3D printed and had all the components inside ensuring that it can be easily put on and taken off. Mostly stoves can pull out the knob thus allowing for easy retrofitting. One issue was how we were going to power the device, for this showcase we just had a wired cable but ideally a wireless version would be ideal. Because a wired version would require an external power source which could be an outlet or taking apart the stove and connecting to that electrical which could result in warrenty problems. We learned how to identify problems rather than creating a solution then finding a problem to fit the solution. This was a great project and I am very proud of my team as it was a lot of work and research to get this project completed.",
+      "summary": "A retrofitted stove knob that automatically turns off after a user set time, aimed to prevent house fires cause by memory impairments",
+      "category": "CAPSTONE",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
     },
     {
-      "date": "2020",
-      "title": "First steps, many drafts",
-      "description": "The start of making things just to see what might happen.",
-      "example": true
-    }
-  ],
-  "updates": [
-    {
-      "date": "2026-10-12",
-      "title": "A home for the work",
-      "description": "Starting this archive as a place to keep the projects, the detours, and whatever comes next.",
-      "example": true
+      "id": "masters-capstone",
+      "title": "Master's Capstone",
+      "description": "",
+      "summary": "We are currently tackling the problem of the Ontario used tire reprocessing industry. As dealers in Ontario have stacks of tires and haulers seem to have no jobs",
+      "category": "IN PROGRESS",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
     },
     {
-      "date": "2026-08-03",
-      "title": "Back to the sketchbook",
-      "description": "Making time for small experiments again. More soon.",
-      "example": true
+      "id": "mechatronics-design-models",
+      "title": "Mechatronics Design Models (Self-Driving Car)",
+      "description": "",
+      "summary": "Design models for a self-driving car",
+      "category": "MECHATRONICS",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
+    },
+    {
+      "id": "machine-design",
+      "title": "Machine Design",
+      "description": "For this project we had to create a tool that can perform 3 different tasks. We decided on a sander, drill and router. At the end of the day the tools worked in their fields but this was not the most practical as it was big and bulky. Meaning it was quite difficult to move around, there were safety features used so that the operator could not get injured such as a stop so when using the drill portation it could stop. As well as have high handels so when routing fingers could not get caught.",
+      "summary": "We created a 3 in 1 tool that was only adjusted by mechanical parts, such as pulleys and gears",
+      "category": "MACHINE DESIGN",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
+    },
+    {
+      "id": "manufacturing-process",
+      "title": "Manufacturing Process",
+      "description": "",
+      "category": "MANUFACTURING",
+      "summary": "Using the lathe, mill and other machines to create parts to test our understanding of reading drawings",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
+    },
+    {
+      "id": "robotics-labs",
+      "title": "Robotics Labs",
+      "description": "",
+      "summary": "Using and programming the Fenuc, Kuka and Baxter Robots to complete tasks",
+      "category": "ROBOTICS",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
+    },
+    {
+      "id": "toy-project-year-2",
+      "title": "Toy Project (2nd Year)",
+      "description": "",
+      "summary": "Creating a toy that is fun and educational and can fit inside a small container",
+      "category": "YEAR 2",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
+    },
+    {
+      "id": "co-op-experience",
+      "title": "Co-op Experience",
+      "description": "",
+      "summary": "Pictures and videos from my amazing co-op experiences",
+
+      "category": "CO-OP",
+      "image": "",
+      "video": "",
+      "imageAlt": ""
     }
   ]
-}
+
+    }

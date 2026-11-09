@@ -8,6 +8,7 @@ const escapeHTML = (value = "") =>
   })[character]);
 
 const safeURL = (value = "") => {
+  if (!value) return "";
   try {
     const url = new URL(value, window.location.href);
     return ["http:", "https:", "mailto:"].includes(url.protocol) ? url.href : "";
@@ -18,48 +19,27 @@ const safeURL = (value = "") => {
 
 const exampleLabel = (isExample) => isExample ? '<span class="example-label">EXAMPLE</span>' : "";
 
-const formatDate = (value) => {
-  const date = new Date(/^\d{4}$/.test(value) ? `${value}-02-01` : value);
-  return Number.isNaN(date.getTime())
-    ? escapeHTML(value)
-    : new Intl.DateTimeFormat("en", { month: "short", year: "numeric" }).format(date);
-};
-
-const renderProject = (project, index) => {
+const renderProject = (project, index, collection) => {
   const imageURL = safeURL(project.image);
-  const projectURL = safeURL(project.url);
-  const image = imageURL
-    ? `<img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" loading="lazy" />`
-    : `<div class="project-image-empty" aria-hidden="true"><span>IMAGE<br />GOES HERE</span></div>`;
-  const title = projectURL
-    ? `<a href="${escapeHTML(projectURL)}" target="_blank" rel="noopener noreferrer">${escapeHTML(project.title)} <span aria-hidden="true">↗</span></a>`
-    : escapeHTML(project.title);
+  const videoURL = safeURL(project.video);
+  const projectURL = `project.html?collection=${encodeURIComponent(collection)}&id=${encodeURIComponent(project.id)}`;
+  const media = videoURL
+    ? `<video src="${escapeHTML(videoURL)}" controls preload="metadata" aria-label="${escapeHTML(project.title)} video"></video>`
+    : imageURL
+      ? `<img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" loading="lazy" />`
+      : `<div class="project-image-empty" aria-hidden="true"><span>VIEW PROJECT<br />DETAILS</span></div>`;
+  const meta = [project.category, project.year].filter(Boolean);
 
   return `
     <article class="project-card project-card-${index + 1}">
-      <div class="project-visual">${image}<span class="project-number">0${index + 1}</span>${exampleLabel(project.example)}</div>
-      <div class="project-meta"><span>${escapeHTML(project.category)}</span><span>${escapeHTML(project.year)}</span></div>
-      <h3>${title}</h3>
-      <p>${escapeHTML(project.description)}</p>
+      <div class="project-visual">${media}<span class="project-number">${String(index + 1).padStart(2, "0")}</span>${exampleLabel(project.example)}</div>
+      ${meta.length ? `<div class="project-meta">${meta.map((value) => `<span>${escapeHTML(value)}</span>`).join("")}</div>` : ""}
+      <h3>${escapeHTML(project.title)} <span aria-hidden="true">↗</span></h3>
+      ${project.summary || project.description ? `<p>${escapeHTML(project.summary || project.description)}</p>` : ""}
+      <span class="project-detail-link">View project <span aria-hidden="true">→</span></span>
+      <a class="project-card-overlay" href="${escapeHTML(projectURL)}" aria-label="Open ${escapeHTML(project.title)} project details"></a>
     </article>`;
 };
-
-const renderJourney = (item) => `
-  <article class="journey-item">
-    <span class="journey-date">${escapeHTML(item.date)}</span>
-    <div class="journey-marker" aria-hidden="true"></div>
-    <div class="journey-copy">
-      <div class="journey-title-row"><h3>${escapeHTML(item.title)}</h3>${exampleLabel(item.example)}</div>
-      <p>${escapeHTML(item.description)}</p>
-    </div>
-  </article>`;
-
-const renderUpdate = (item) => `
-  <article class="update-item">
-    <time datetime="${escapeHTML(item.date)}">${formatDate(item.date)}</time>
-    <div class="update-copy"><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.description)}</p></div>
-    ${exampleLabel(item.example)}
-  </article>`;
 
 const renderSocial = (social) => {
   const url = safeURL(social.url);
@@ -69,7 +49,7 @@ const renderSocial = (social) => {
 };
 
 const showLoadError = () => {
-  document.querySelectorAll("#project-grid, #journey-list, #updates-list").forEach((list) => {
+  document.querySelectorAll("#project-grid, #school-project-grid").forEach((list) => {
     list.innerHTML = '<p class="load-error">Portfolio content could not be loaded. Check that content.json is valid JSON.</p>';
   });
 };
@@ -91,9 +71,8 @@ fetch("content.json")
     if (emailURL) contactLink.href = emailURL;
 
     document.querySelector("#project-count").textContent = String(content.projects.length).padStart(2, "0");
-    document.querySelector("#project-grid").innerHTML = content.projects.map(renderProject).join("");
-    document.querySelector("#journey-list").innerHTML = content.journey.map(renderJourney).join("");
-    document.querySelector("#updates-list").innerHTML = content.updates.map(renderUpdate).join("");
+    document.querySelector("#project-grid").innerHTML = content.projects.map((project, index) => renderProject(project, index, "projects")).join("");
+    document.querySelector("#school-project-grid").innerHTML = content.schoolProjects.map((project, index) => renderProject(project, index, "schoolProjects")).join("");
     document.querySelector("#social-links").innerHTML = content.socials.map(renderSocial).join("");
     document.querySelector("#footer-year").textContent = new Date().getFullYear();
   })
