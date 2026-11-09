@@ -20,3 +20,5 @@ The About page is in `about.html`. A Fitness & Travel draft is kept in `fitness-
 In the repository settings, open **Pages** and set the build and deployment source to **GitHub Actions**. The workflow in `.github/workflows/pages.yml` deploys the static site whenever changes are pushed to `main`. The first workflow run may take a few minutes to publish.
 
 The site is plain HTML, CSS, and JavaScript; it needs no build step or dependencies. To preview it locally, run `python3 -m http.server 8000` from this directory and open `http://localhost:8000`.
+
+Open the repository in [GitHub Codespaces](https://github.com/codespaces).
