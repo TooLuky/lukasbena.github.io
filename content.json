@@ -1,0 +1,86 @@
+{
+  "name": "Lukas Bena",
+  "kicker": "CARS · CURIOSITY · THE OUTDOORS",
+  "intro": "I enjoy working on projects, whether that means working with my hands or with my brain. This is a place to keep what I’ve worked on, learned, and want to explore next.",
+  "email": "lukas.bena4@gmail.com",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/lukas-bena/" }
+  ],
+  "projects": [
+    {
+      "title": "Honda Z50",
+      "description": "This project goes over me restorating a 1980 Honda Z50 motorcycle and bringing it back to life",
+      "category": "GARAGE PROJECT",
+      "year": "2020",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85",
+      "imageAlt": "A 1980 Honda Z50 motorcycle",
+      "url": "",
+      "example": true
+    },
+    {
+      "title": "Flashfood Heat map",
+      "description": "A visualization of popular times at Flashfood locations, helping users plan their visits efficiently.",
+      "category": "OUTDOORS",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85",
+      "imageAlt": "A quiet mountain lake at sunrise",
+      "url": "",
+      "example": true
+    },
+    {
+      "title": "Learning by doing",
+      "description": "Keep track of skills, experiments, and ideas you’re still working through.",
+      "category": "IN PROGRESS",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
+      "imageAlt": "Sunlight coming through a green forest",
+      "url": "",
+      "example": true
+    },
+    {
+      "title": "Learning by doing",
+      "description": "Keep track of skills, experiments, and ideas you’re still working through.",
+      "category": "IN PROGRESS",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85",
+      "imageAlt": "Sunlight coming through a green forest",
+      "url": "",
+      "example": true
+    }
+  ],
+  "journey": [
+    {
+      "date": "2026",
+      "title": "Making room for what’s next",
+      "description": "Collecting the work in one place and making a little more space for the next idea.",
+      "example": true
+    },
+    {
+      "date": "2023",
+      "title": "A new chapter begins",
+      "description": "A shift in direction, a fresh set of questions, and plenty to learn along the way.",
+      "example": true
+    },
+    {
+      "date": "2020",
+      "title": "First steps, many drafts",
+      "description": "The start of making things just to see what might happen.",
+      "example": true
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-10-12",
+      "title": "A home for the work",
+      "description": "Starting this archive as a place to keep the projects, the detours, and whatever comes next.",
+      "example": true
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Back to the sketchbook",
+      "description": "Making time for small experiments again. More soon.",
+      "example": true
+    }
+  ]
+}
