@@ -15,8 +15,19 @@
       "summary": "A 1980 Honda Z50 restoration, bringing a classic motorcycle back to life.",
       "category": "GARAGE PROJECT",
       "year": "2020",
-      "image": "",
-      "imageAlt": "",
+      "image": "images/IMG_4418.JPG",
+      "imageAlt": "Lukas riding the Honda Z50",
+      "media": [
+        {
+          "type": "image",
+          "src": "images/IMG_4418.JPG",
+          "alt": "Lukas riding the Honda Z50"
+        },
+        {
+          "type": "video",
+          "src": "Videos/IMG_0718.mp4"
+        }
+      ],
       "url": ""
     },
     {

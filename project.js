@@ -42,13 +42,29 @@ fetch("content.json")
       return;
     }
 
-    const imageURL = safeURL(project.image);
-    const videoURL = safeURL(project.video);
-    const media = videoURL
-      ? `<video src="${escapeHTML(videoURL)}" controls preload="metadata" aria-label="${escapeHTML(project.title)} video"></video>`
-      : imageURL
-        ? `<a class="project-detail-image-link" href="${escapeHTML(imageURL)}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image for ${escapeHTML(project.title)}"><img src="${escapeHTML(imageURL)}" alt="${escapeHTML(project.imageAlt)}" /></a>`
-        : "";
+    const mediaItems = Array.isArray(project.media)
+      ? project.media
+      : project.video
+        ? [{ type: "video", src: project.video }]
+        : project.image
+          ? [{ type: "image", src: project.image, alt: project.imageAlt }]
+          : [];
+    const media = mediaItems.map((item, index) => {
+      const mediaURL = safeURL(item.src);
+      if (!mediaURL) return "";
+
+      if (item.type === "video") {
+        const label = item.label || `${project.title} video ${index + 1}`;
+        return `<video src="${escapeHTML(mediaURL)}" controls preload="metadata" playsinline aria-label="${escapeHTML(label)}"></video>`;
+      }
+
+      if (item.type === "image") {
+        const alt = item.alt || project.title;
+        return `<a class="project-detail-image-link" href="${escapeHTML(mediaURL)}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image for ${escapeHTML(project.title)}"><img src="${escapeHTML(mediaURL)}" alt="${escapeHTML(alt)}" /></a>`;
+      }
+
+      return "";
+    }).join("");
     const meta = [project.category, project.year].filter(Boolean);
     const externalURL = safeURL(project.url);
 
