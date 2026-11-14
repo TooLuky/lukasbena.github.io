@@ -49,9 +49,7 @@ const renderSocial = (social) => {
 };
 
 const showLoadError = () => {
-  document.querySelectorAll("#project-grid, #school-project-grid").forEach((list) => {
-    list.innerHTML = '<p class="load-error">Portfolio content could not be loaded. Check that content.json is valid JSON.</p>';
-  });
+  document.querySelector("#project-grid").innerHTML = '<p class="load-error">Portfolio content could not be loaded. Check that content.json is valid JSON.</p>';
 };
 
 fetch("content.json")
@@ -72,7 +70,6 @@ fetch("content.json")
 
     document.querySelector("#project-count").textContent = String(content.projects.length).padStart(2, "0");
     document.querySelector("#project-grid").innerHTML = content.projects.map((project, index) => renderProject(project, index, "projects")).join("");
-    document.querySelector("#school-project-grid").innerHTML = content.schoolProjects.map((project, index) => renderProject(project, index, "schoolProjects")).join("");
     document.querySelector("#social-links").innerHTML = content.socials.map(renderSocial).join("");
     document.querySelector("#footer-year").textContent = new Date().getFullYear();
   })

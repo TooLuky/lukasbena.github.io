@@ -55,7 +55,7 @@ fetch("content.json")
     document.title = `${project.title} | Lukas Bena`;
     document.querySelector('meta[name="description"]').content = project.summary || project.description || project.title;
     document.querySelector("#project-detail").innerHTML = `
-      <a class="detail-back-link" href="index.html#${collection === "schoolProjects" ? "school-experience" : "projects"}">← Back to ${collection === "schoolProjects" ? "school projects" : "projects"}</a>
+      <a class="detail-back-link" href="index.html#projects">← Back to projects</a>
       <header class="project-detail-heading">
         ${meta.length ? `<p class="eyebrow">${meta.map(escapeHTML).join(' <span class="eyebrow-rule"></span> ')}</p>` : ""}
         <h1>${escapeHTML(project.title)}<span>.</span></h1>
