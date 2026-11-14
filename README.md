@@ -9,6 +9,8 @@ A small, framework-free portfolio for GitHub Pages. The page reads its content f
 3. Project images can be hosted anywhere publicly and added as the project's `image` URL. Use an empty string if you do not want an image.
 4. Save your changes, then follow **Publish your changes from VS Code** below to put them on the live site.
 
+To show multiple photos or videos on a project's detail page, add a `media` array with `type` (`image` or `video`) and `src` fields; image items can also include `alt` text. The existing `image` and `video` fields still work for single-media projects.
+
 School project entries are preserved in the `schoolProjects` array in `content.json`, but are not displayed on the site. Keep adding to that array if you like; when you're ready to show them, the school section can be restored.
 
 Each project can have a short `summary` for its homepage card and a longer `description` for its detail page. Project detail links use the project's unique `id`; keep IDs unique within each project list.
